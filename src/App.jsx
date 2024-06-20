@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import Menu from './pages/Menu'
+import About from './pages/About'
 
 const App = () => {
   return (
@@ -13,6 +14,9 @@ const App = () => {
         </div>
         <div id='menu'>
           <Menu/>
+        </div>
+        <div id="about">
+          <About/>
         </div>
       </main>
     </div>

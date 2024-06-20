@@ -3,7 +3,7 @@ import Menucard from './Menucard'
 import img1 from '../assets/black_coffee.jpg'
 import img2 from '../assets/ec178d83e5f597b162cda1e60cb64194.jpg'
 import img3 from '../assets/Cappuccino_at_Sightglass_Coffee.jpg'
-import img4 from '../assets/cafe-latte.jpg'
+import img4 from '../assets/hot-coffee-capuccino-cup-with-latte-art-wood-table-cafe_778722-16.avif'
 import img5 from '../assets/Mocha-1fc71f7.png'
 import img6 from '../assets/Untitled_design_43_1775b250-963a-4242-869d-932a29e6c306_480x480.jpg'
 
