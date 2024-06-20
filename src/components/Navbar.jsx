@@ -26,22 +26,22 @@ const Navbar = () => {
                         <span>
                             <SiCoffeescript />
                         </span>
-                        <h1 className='text-xl font-semibold'>CafePulse</h1>
+                        <h1 className='text-xl font-semibold'>Jaz Coffee</h1>
                     </div>
                     <nav className='hidden md:flex flex-row items-center text-lg font-medium gap-8'>
                         <Link to="home" spy={true} smooth={true} duration={500} className="group relative inline-block cursor-pointer hover:text-brightColor">
-                            Home <span className='absolute inset-x-0 button-0 h-0.5 bg-black transform scale-x-0 origin-left transition-transform group-hover:scale-x-100'></span></Link>
+                            Home <span className='absolute inset-x-0 bottom-0 h-0.5 bg-black transform scale-x-0 origin-left transition-transform group-hover:scale-x-100'></span></Link>
                         <Link to="menu" spy={true} smooth={true} duration={500} className="group relative inline-block cursor-pointer hover:text-brightColor">
-                            Menu<span className='absolute inset-x-0 button-0 h-0.5 bg-black transform scale-x-0 origin-left transition-transform group-hover:scale-x-100'></span></Link>
+                            Menu<span className='absolute inset-x-0 bottom-0 h-0.5 bg-black transform scale-x-0 origin-left transition-transform group-hover:scale-x-100'></span></Link>
                         <Link to="aboutus" spy={true} smooth={true} duration={500} className="group relative inline-block cursor-pointer hover:text-brightColor">About Us
-                            <span className='absolute inset-x-0 button-0 h-0.5 bg-black transform scale-x-0 origin-left transition-transform group-hover:scale-x-100'></span></Link>
+                            <span className='absolute inset-x-0 bottom-0 h-0.5 bg-black transform scale-x-0 origin-left transition-transform group-hover:scale-x-100'></span></Link>
                         <Link to="products" spy={true} smooth={true} duration={500} className="group relative inline-block cursor-pointer hover:text-brightColor">Products
-                            <span className='absolute inset-x-0 button-0 h-0.5 bg-black transform scale-x-0 origin-left transition-transform group-hover:scale-x-100'></span></Link>
+                            <span className='absolute inset-x-0 bottom-0 h-0.5 bg-black transform scale-x-0 origin-left transition-transform group-hover:scale-x-100'></span></Link>
                         <Link to="reviews" spy={true} smooth={true} duration={500} className="group relative inline-block cursor-pointer hover:text-brightColor">Reviews
-                            <span className='absolute inset-x-0 button-0 h-0.5 bg-black transform scale-x-0 origin-left transition-transform group-hover:scale-x-100'></span></Link>
+                            <span className='absolute inset-x-0 bottom-0 h-0.5 bg-black transform scale-x-0 origin-left transition-transform group-hover:scale-x-100'></span></Link>
                     </nav>
                     <div className='hidden lg:flex'>
-                        <Button title='Login' />
+                        <Button title='Login' />    
                     </div>
                     <div className='md:hidden flex items-center'>
                         {menu ? (
