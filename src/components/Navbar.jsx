@@ -1,33 +1,36 @@
 import React from 'react'
-import sicoffee from 'react-icons/si'
+import { SiCoffeescript } from 'react-icons/si'
+import { Link } from 'react-scroll'
+import Button from '../layout/button'
 
 const Navbar = () => {
-  return (
-    <div>
+    return (
         <div>
             <div>
-                <div>
-                    <span>
-                        <sicoffee/>
-                    </span>
-                    <h1>CafePulse</h1>
+                <div className='flex flex-row justify-between p-5 lg:px-32 px-5 bg-gradient-to-r from-backgroundColor to-brightColor shadow-[0_3px_10px_rgb(0,0,0,0.2)]'>
+                    <div className='flex flex-row items-center cursor-pointer gap-2'>
+                        <span>
+                            <SiCoffeescript />
+                        </span>
+                        <h1 className='text-xl font-semibold'>CafePulse</h1>
+                    </div>
+                    <nav className='hidden md:flex flex-row items-center text-lg font-medium gap-8'>
+                        <Link to="home" spy={true} smooth={true} duration={500} className="group relative inline-block cursor-pointer hover:text-brightColor">
+                        Home <span className='absolute inset-x-0 button-0 h-0.5 bg-black transform scale-x-0 origin-left transition-transform group-hover:scale-x-100'></span></Link>
+                        <Link to="menu" spy={true} smooth={true} duration={500} className="group relative inline-block cursor-pointer hover:text-brightColor">
+                        Menu<span className='absolute inset-x-0 button-0 h-0.5 bg-black transform scale-x-0 origin-left transition-transform group-hover:scale-x-100'></span></Link>
+                        <Link to="aboutus" spy={true} smooth={true} duration={500} className="group relative inline-block cursor-pointer hover:text-brightColor">About Us
+                        <span className='absolute inset-x-0 button-0 h-0.5 bg-black transform scale-x-0 origin-left transition-transform group-hover:scale-x-100'></span></Link>
+                        <Link to="products" spy={true} smooth={true} duration={500} className="group relative inline-block cursor-pointer hover:text-brightColor">Products
+                        <span className='absolute inset-x-0 button-0 h-0.5 bg-black transform scale-x-0 origin-left transition-transform group-hover:scale-x-100'></span></Link>
+                        <Link to="reviews" spy={true} smooth={true} duration={500} className="group relative inline-block cursor-pointer hover:text-brightColor">Reviews
+                        <span className='absolute inset-x-0 button-0 h-0.5 bg-black transform scale-x-0 origin-left transition-transform group-hover:scale-x-100'></span></Link>
+                    </nav>
+                <Button title='Login' />
                 </div>
-                <nav>
-                    <link to="home" spy={true} smooth={true} duration={500} className='Curserpoint'>Home</link>
-                    <link to="menu" spy={true} smooth={true} duration={500} className='Curserpoint'>Menu</link>
-                    <link to="aboutus" spy={true} smooth={true} duration={500} className='Curserpoint'>About Us</link>
-                    <link to="products" spy={true} smooth={true} duration={500} className='Curserpoint'>Products</link>
-                    <link to="reviews" spy={true} smooth={true} duration={500} className='Curserpoint'>Reviews</link>
-                    <link to="reviews" spy={true} smooth={true} duration={500} className='Curserpoint'>Reviews</link>
-                    <link to="reviews" spy={true} smooth={true} duration={500} className='Curserpoint'>Reviews</link>
-
-                    
-                </nav>
             </div>
-            <button>Login</button>
         </div>
-    </div>
-  )
+    )
 }
 
 export default Navbar
